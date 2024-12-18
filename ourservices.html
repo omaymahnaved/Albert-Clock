@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBERT CLOCK</title>
+    <link rel="shortcut icon" type="image" href="LOGO.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+
+<style>
+.img1{
+    margin-bottom: -8px;
+    margin-top: -8px;
+    margin-right: -8px;      
+  }
+  .cards-thumb {
+position: relative;
+overflow: hidden;
+}
+
+.cards-thumb:hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.2);
+}
+
+/* .cards-thumb > a {
+display: block;
+width: 100%;
+height: 100%;
+position: relative;
+z-index: 2;
+transition: all 0.3s ease-out;
+} */
+
+/* .cards-thumb > a:hover {
+transform: scale(1.2);
+} */
+
+.cards-text-info {
+background: var(--section-bg-color);
+position: relative;
+z-index: 2;
+padding: 20px;
+transition: all 0.3s ease-out;
+margin-left: 20%;
+}
+
+.related-cards .cards-text-info {
+background: var(--white-color);
+}
+
+.cards-text-info-large {
+background: linear-gradient(to top, var(--dark-color), transparent 90%);
+position: absolute;
+z-index: 2;
+bottom: 0;
+right: 0;
+left: 0;
+pointer-events: none;
+}
+
+.cards-text-info-large .cards-title-link {
+color: var(--white-color);
+}
+
+.cards-title-link {
+color: var(--news-title-color);
+text-decoration: none;
+color: white;
+margin-left: 15%;
+font-weight: normal;
+}
+.cards-title-link:hover {
+color: #fec400;
+letter-spacing: 2px;
+transition: 0.2s ease-in-out;
+}
+
+.cards-image {
+display: block;
+width: 100%;
+transition: all 0.3s ease-out;
+}
+
+.cards-image:hover {
+transform: scale(1.2);
+}
+
+.category-tag,
+.menu-tag {
+background: var(--dark-color);
+border-radius: var(--border-radius-default);
+color: var(--white-color);
+font-size: var(--category-font-size);
+display: inline-block;
+padding: 4px 12px;
+}
+
+.category-tag {
+margin-bottom: 5px;
+}
+strong{
+    margin-left: 30%;
+}
+</style>
+
+
+<body>
+
+    <!-- NAV BAR -->
+   
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+                    <!-- LOGO -->
+         <a class="navbar-brand" href="index.html"><img src="LOGO.jpg" alt="LOGO" width="180px"
+            style="padding-bottom: 12px;"></a>
+            <!-- MENU -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+            </button>
+            <!-- ELEMENTS-->
+            <div class="main">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Gallery.html">Gallary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Tech.html">Technology</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutUs.html">AboutUs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">ContactUs</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color:rgba(255, 166, 0, 0.589); width: 50%;">
+                              <li><a class="dropdown-item" href="Luxury.html">Luxury Watches</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="Vintage.html" >Vintage Watches</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="SmartWatches.html">Smart Watches</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="Couple.html">Couple Watches</a></li>
+                            </ul>
+                          </li>
+
+                    </ul>
+                </div>
+                <!-- ELEMENTS END-->
+
+                <!-- LOGIN OR SIGN UP BUTTON  -->
+              <div class="other-links">
+                <button id="btn-login"><a href="login.html">Login</a></button>
+                <button id="btn-signup"><a href="reg.html">Registration</a></button>
+
+            </div>
+        </div>
+</nav>
+    <!-- navbar END -->
+
+    <div class="heading">
+        <h1>Watch Servicing & Maintenance</h1>
+        <p>ALBERT CLOCK offers, for normal wear and tear over time, performs watch servicing and regular maintenance to prolong the life of your watch. Below are among the extensive services.</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="battery-changing-1024x683.jpg" alt="IMAGE">
+            </div>
+            <div class="about-content">
+                <h2>Battery Replacement</h2>
+                <p>Battery replacement is offered at no charge for watches purchased at IWC. A water resistance test is conducted to detect leaks that can be repaired during the battery replacement.</p>
+                
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-content">
+                <h2>Sizing & Adjustments</h2>
+                <p> ALBERT CLOCK staff will adjust the size of a watch, regardless of where it was purchased. This is complimentary for any watch bought at ALBERT CLOCK.</p>
+                
+            </div>
+            <div class="about-image">
+                <img src="maxresdefault-1024x576.jpg" alt="IMAGE">
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="cleaning-watch-ultrasonic.png" alt="IMAGE">
+            </div>
+            <div class="about-content">
+                <h2>Ultrasonic cleaning</h2>
+                <p>Our state-of-the-art equipment thoroughly cleans your watch bracelet.</p>
+                
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-content">
+                <h2>Straps & Bracelets</h2>
+                <p>
+                   ALBERT CLOCK offers a diverse selection of replacement straps and bracelets. Any items not in-store can be special-ordered through our service team..</p> 
+            </div>
+            <div class="about-image">
+                <img src="watch-straps-1024x684.jpg" alt="IMAGE">
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="water-resistance.jpg" alt="IMAGE">
+            </div>
+            <div class="about-content">
+                <h2>Water Resistance Maintenance </h2>
+                <p>
+                    Replacement and lubrication of gaskets and seals ensure continued water resistance.</p>
+                
+            </div>
+        </section>
+    </div>
+   
+   
+   
+   
+   
+   
+    <div class="heading">
+        <h1>WATCH REPAIR</h1>
+        <p>If your watch is not working for any reason, ALBERT CLOCK has the expertise to resolve it using only original manufacture parts. Below are among the extensive repairs we offer.</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="De-Magnetism.jpg" alt="IMAGE">
+            </div>
+            <div class="about-content">
+                <h2>Mechanical Watch De-Magnetism</h2>
+                <p>If a mechanical watch has become disrupted from magnetic fields penetrating the timing element, IWC will conduct a test and, if necessary, apply an inverse magnetic field to restore its normal function at no charge..</p>
+                
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-content">
+                <h2>Complete Overhaul</h2>
+                <p> Restore your watch to its original factory specifications and prolong its life with disassembly, cleaning, reassembly of the movement, and improvement in the timing of the watch. Most mechanical watches require a full maintenance every three to five years, depending on the brand specifications.</p>
+                
+            </div>
+            <div class="about-image">
+                <img src="servicing_rolex_components_0001_840x720.jpg" alt="IMAGE">
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="water-resistance.jpg" alt="IMAGE">
+            </div>
+            <div class="about-content">
+                <h2>MISSING OR BROKEN CROWNS, PINS, PUSHERS</h2>
+               
+                
+            </div>
+        </section>
+    </div>
+
+    
+  <!------------------------------------------footer----------------------------------------------------->
+  <footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3 style="padding-top: 12px; font-weight: bold; font-size: 22px;">Follow Us On</h3>
+                    <br>
+                    <div class="socail-links mt-3">
+                        <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                        <a href="#"  target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-skype"></i></a> -->
+                        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-12 " id="clock">
+                        <span id="hours">12</span>
+                        <span>:</span>
+                        <span id="minutes">12</span>
+                        <span>:</span>
+                        <span id="seconds">12</span>
+                        <span id="session">AM</span>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h3 style="font-weight: bold; font-size: 22px;">Our Services</h3>
+                    <ul>
+                        <li><a href="ourservices.html" target="_blank">Our Service</a></li>
+                        <li><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+                        <li><a href="location.html" target="_blank">Location</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h3 style="font-weight: bold; font-size: 22px;">Contact Us</h3>
+
+                    <ul>
+                        <li><a href="aboutUs.html" target="_blank">About Us</a></li>
+                        <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                        <li><a href="#" target="_blank">Site Map</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h3 style="font-weight: bold; font-size: 22px;">Useful Links</h3>
+
+                    <ul>
+                        <li><a href="paymentpage.html" target="_blank">Payment Option </a></li>
+                        <li><a href="Gallery.html" target="_blank">Main Gallay</a></li>
+                        <li><a href="#" target="_blank">Feedback Form</a></li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- arrow-->
+<a href="#" class="arrow"><i><img src="arrow.png" alt=""></i></a>
+
+<!-- arrow jawa -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<!-- time  java -->
+<script>
+    function displaytTime() {
+        var dateTime = new Date();
+        var hrs = dateTime.getHours();
+        var min = dateTime.getMinutes();
+        var sec = dateTime.getSeconds();
+        var session = document.getElementById("session");
+
+        if (hrs >= 12) {
+            session.innerHTML = "PM";
+        } else {
+            session.innerHTML = "AM";
+        }
+
+        if (hrs > 12) {
+            hrs = hrs - 12;
+        } else {
+            session.innerHTML = "AM";
+        }
+
+        document.getElementById("hours").innerHTML = hrs;
+        document.getElementById("minutes").innerHTML = min;
+        document.getElementById("seconds").innerHTML = sec;
+    }
+    setInterval(displaytTime, 10);
+</script>
+<!-- time java end -->
+
+</body>
+</html>

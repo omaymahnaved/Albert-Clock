@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBERT CLOCK</title>
+    <link rel="shortcut icon" type="image" href="LOGO.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lexend+Deca:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,600;1,700;1,800&family=Varela+Round&display=swap');
+
+body 
+{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+ .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#fec400;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#fec400;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus
+{
+  color:#fff;
+  background-color:#fec400
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+.nav-item::after {
+     content: '';
+     display: block;
+     width: 0px;
+     height: 2px;
+     background: #fec400;
+     transition: 0.4s
+ }
+ 
+ .nav-item:hover::after {
+     width: 100%
+}
+.navbar-dark .navbar-nav .active>.nav-link,
+ .navbar-dark .navbar-nav .nav-link.active,
+ .navbar-dark .navbar-nav .nav-link.show,
+ .navbar-dark .navbar-nav .show>.nav-link,
+ .navbar-dark .navbar-nav .nav-link:focus,
+ .navbar-dark .navbar-nav .nav-link:hover {
+     color: #fec400
+ }
+ .blurry
+      {
+        position: fixed;
+    width: 100%;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+   justify-content: space-between;
+      }
+      .img1{
+        margin-bottom: -8px;
+        margin-top: -8px;
+        margin-right: -8px;      
+      }
+     
+.pic1 {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.pic1 ,
+.pic2 ,
+.pic3
+    {
+        cursor: pointer;
+        transition: all 1.3s ease;
+    }
+    .pic1:hover ,
+.pic2:hover ,
+.pic3:hover
+    {
+        overflow: hidden; 
+        transform: scale(1.1);    
+    }
+
+    #our{
+        color: white;
+    }
+  </style>
+</head>
+<body>
+
+           <!-- NAV BAR -->
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+         <!-- LOGO -->
+         <a class="navbar-brand" href="index.html"><img src="LOGO.jpg" alt="LOGO" width="180px"
+          style="padding-bottom: 12px;"></a>
+          <!-- MENU -->
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+          </button>
+          <!-- ELEMENTS-->
+          <div class="main">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Gallery.html">Gallary</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Tech.html">Technology</a>
+                      </li>
+                     
+                      <li class="nav-item">
+                          <a class="nav-link" href="aboutUs.html">AboutUs</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">ContactUs</a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Products
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                              style="background-color:rgba(255, 166, 0, 0.589); width: 50%;">
+                            <li><a class="dropdown-item" href="Luxury.html">Luxury Watches</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="Vintage.html" >Vintage Watches</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="SmartWatches.html">Smart Watches</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="Couple.html">Couple Watches</a></li>
+                          </ul>
+                        </li>
+
+                  </ul>
+              </div>
+              <!-- ELEMENTS END-->
+
+              <!-- LOGIN OR SIGN UP BUTTON  -->
+              <!-- LOGIN OR SIGN UP BUTTON  -->
+              <div class="other-links">
+                <button id="btn-login"><a href="login.html">Login</a></button>
+                <button id="btn-signup"><a href="reg.html">Registration</a></button>
+
+            </div>
+        </div>
+</nav>
+  <!-- navbar END -->
+   
+
+<!-- GALLERY -->
+   <div class="container-first">
+    <h1 class="ind  text-center fs-1" data-aos="fade-right" id="our">Our<span class="text-warning">Gallery</span> </h1>
+  <hr class="hr1 pg">
+  <div class="container ">
+      <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+             <div class="pic1"><img src="Gallary imgs/s-l1600.jpg" class="able img-fluid mb-3" alt="..."></div> 
+             <div class="pic1"><img src="Gallary imgs/pink couple wqatch.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+             <div class="pic1"><img src="Gallary imgs/pexels-photo-1268511.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+             <div class="pic1"><img src="Gallary imgs/10-Best-Luxury-Watches-for-Women-f.png" class="able img-fluid mb-3" alt="..."></div> 
+             <div class="pic1"><img src="Gallary imgs/pexels-photo-9980289.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+             <div class="pic1"><img src="Gallary imgs/rado latest couple watch.jpg" class="able img-fluid mb-3" alt="..."></div> 
+          </div> 
+  
+          <div class=" col-lg-4 col-md-4 col-sm-12 col-12">
+            <div class="pic2"><img src="Gallary imgs/Couple watches.jpg" class="able img-fluid mb-3" alt="..."></div> 
+            <div class="pic2"><img src="Gallary imgs/luxury-watches-feature-image.jpg" class="able img-fluid mb-3" alt="..."></div> 
+            <div class="pic2"><img src="Gallary imgs/men-watches-india.jpg" class="able img-fluid mb-3" alt="..."></div> 
+            <div class="pic2"><img src="Gallary imgs/DARK_MOOD_LADIES.jpg" class="able img-fluid mb-3" alt="..."></div> 
+            <div class="pic2"><img src="Gallary imgs/vintage bulova.jpg" class="able img-fluid mb-3" alt="..."></div>
+            <div class="pic2"><img src="Gallary imgs/26eee8e7257a84afec59db5ad79d6998.jpg" class="able img-fluid mb-3" alt="..."></div> 
+            <div class="pic2"><img src="Gallary imgs/40-2.jpg" class="able img-fluid mb-3" alt="..."></div> 
+
+          </div>
+  
+          <div class=" col-lg-4 col-md-4 col-sm-12 col-12">
+            <div class="pic3"><img src="Gallary imgs/p-citizen-analog-black-dial-couple-watch-78643-m.png" class="able img-fluid mb-3" alt="..."></div> 
+            <div class="pic3"><img src="Gallary imgs/pexels-photo-9878690.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+            <div class="pic3"><img src="Gallary imgs/pexels-photo-9978964.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+            <div class="pic3"><img src="Gallary imgs/pexels-photo-10443218.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+            <div class="pic3"><img src="Gallary imgs/pexels-photo-1497307.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+            <div class="pic3"><img src="Gallary imgs/pexels-photo-13186087.jpeg" class="able img-fluid mb-3 " alt="..."></div>
+            <div class="pic3"><img src="Gallary imgs/pexels-photo-5669252.jpeg" class="able img-fluid mb-3 " alt="..."></div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+               <div class="pic1"><img src="Gallery img/w1.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+               <div class="pic1"><img src="Gallery img/w10.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+               <div class="pic1"><img src="Gallery img/w11.jpg" class="able img-fluid mb-3" alt="..."></div> 
+               <div class="pic1"><img src="Gallery img/w12.jpg" class="able img-fluid mb-3" alt="..."></div> 
+               <div class="pic1"><img src="Gallery img/w13.jpg" class="able img-fluid mb-3" alt="..."></div> 
+               <div class="pic1"><img src="Gallery img/w14.jpg" class="able img-fluid mb-3" alt="..."></div> 
+            </div> 
+    
+            <div class=" col-lg-4 col-md-4 col-sm-12 col-12">
+              <div class="pic2"><img src="Gallery img/w15.jpg" class="able img-fluid mb-3" alt="..."></div> 
+              <div class="pic2"><img src="Gallery img/w16.jpg" class="able img-fluid mb-3" alt="..."></div> 
+              <div class="pic2"><img src="Gallery img/w17.jpg" class="able img-fluid mb-3" alt="..."></div> 
+              <div class="pic2"><img src="Gallery img/w18.jpg" class="able img-fluid mb-3" alt="..."></div> 
+              <div class="pic2"><img src="Gallery img/w19.jpg" class="able img-fluid mb-3" alt="..."></div>
+              <div class="pic2"><img src="Gallery img/w2.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+              <div class="pic2"><img src="Gallery img/w20.jpg" class="able img-fluid mb-3" alt="..."></div> 
+  
+            </div>
+    
+            <div class=" col-lg-4 col-md-4 col-sm-12 col-12">
+              <div class="pic3"><img src="Gallery img/w3.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+              <div class="pic3"><img src="Gallery img/w9.jpg" class="able img-fluid mb-3" alt="..."></div> 
+              <div class="pic3"><img src="Gallery img/w8.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+              <div class="pic3"><img src="Gallery img/w7.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+              <div class="pic3"><img src="Gallery img/w6.jpeg" class="able img-fluid mb-3" alt="..."></div> 
+              <div class="pic3"><img src="Gallery img/w4.jpeg" class="able img-fluid mb-3 " alt="..."></div>
+              <div class="pic3"><img src="Gallery img/w5.jpeg" class="able img-fluid mb-3 " alt="..."></div>
+  
+            </div>
+      </div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- GALLERY -->
+
+
+ <!-- -------------------------------------------footer----------------------------------------------------->
+ <!------------------------------------------footer----------------------------------------------------->
+ <footer id="footer">
+  <div class="footer-top">
+      <div class="container">
+          <div class="row">
+
+              <div class="col-lg-3 col-md-6 footer-contact">
+                  <h3 style="padding-top: 12px; font-weight: bold; font-size: 22px;">Follow Us On</h3>
+                  <br>
+                  <div class="socail-links mt-3">
+                      <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                      <a href="#"  target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                      <!-- <a href="#"><i class="fa-brands fa-skype"></i></a> -->
+                      <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                  <div class="col-sm-6 col-lg-12 " id="clock">
+                      <span id="hours">12</span>
+                      <span>:</span>
+                      <span id="minutes">12</span>
+                      <span>:</span>
+                      <span id="seconds">12</span>
+                      <span id="session">AM</span>
+                  </div>
+
+              </div>
+
+              <div class="col-lg-3 col-md-6 footer-links">
+                  <h3 style="font-weight: bold; font-size: 22px;">Our Services</h3>
+                  <ul>
+                      <li><a href="ourservices.html" target="_blank">Our Service</a></li>
+                      <li><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+                      <li><a href="location.html" target="_blank">Location</a></li>
+
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 footer-links">
+                  <h3 style="font-weight: bold; font-size: 22px;">Contact Us</h3>
+
+                  <ul>
+                      <li><a href="aboutUs.html" target="_blank">About Us</a></li>
+                      <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                      <li><a href="#" target="_blank">Site Map</a></li>
+
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-6 footer-links">
+                  <h3 style="font-weight: bold; font-size: 22px;">Useful Links</h3>
+
+                  <ul>
+                      <li><a href="paymentpage.html" target="_blank">Payment Option </a></li>
+                      <li><a href="Gallery.html" target="_blank">Main Gallay</a></li>
+                      <li><a href="#" target="_blank">Feedback Form</a></li>
+
+                  </ul>
+              </div>
+
+
+          </div>
+      </div>
+  </div>
+
+</footer>
+
+<!-- arrow-->
+<a href="#" class="arrow"><i><img src="arrow.png" alt=""></i></a>
+
+<!-- arrow jawa -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+
+<!-- time  java -->
+<script>
+  function displaytTime() {
+      var dateTime = new Date();
+      var hrs = dateTime.getHours();
+      var min = dateTime.getMinutes();
+      var sec = dateTime.getSeconds();
+      var session = document.getElementById("session");
+
+      if (hrs >= 12) {
+          session.innerHTML = "PM";
+      } else {
+          session.innerHTML = "AM";
+      }
+
+      if (hrs > 12) {
+          hrs = hrs - 12;
+      } else {
+          session.innerHTML = "AM";
+      }
+
+      document.getElementById("hours").innerHTML = hrs;
+      document.getElementById("minutes").innerHTML = min;
+      document.getElementById("seconds").innerHTML = sec;
+  }
+  setInterval(displaytTime, 10);
+</script>
+<!-- time java end -->
+
+</body>
+</html>

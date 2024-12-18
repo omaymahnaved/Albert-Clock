@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBERT CLOCK</title>
+    <link rel="shortcut icon" type="image" href="LOGO.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lexend+Deca:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,600;1,700;1,800&family=Varela+Round&display=swap');
+
+body 
+{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+ .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#fec400;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#fec400;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus
+{
+  color:#fff;
+  background-color:#fec400
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+.nav-item::after {
+     content: '';
+     display: block;
+     width: 0px;
+     height: 2px;
+     background: #fec400;
+     transition: 0.4s
+ }
+ 
+ .nav-item:hover::after {
+     width: 100%
+}
+.navbar-dark .navbar-nav .active>.nav-link,
+ .navbar-dark .navbar-nav .nav-link.active,
+ .navbar-dark .navbar-nav .nav-link.show,
+ .navbar-dark .navbar-nav .show>.nav-link,
+ .navbar-dark .navbar-nav .nav-link:focus,
+ .navbar-dark .navbar-nav .nav-link:hover {
+     color: #fec400
+ }
+ .blurry
+      {
+        position: fixed;
+    width: 100%;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+   justify-content: space-between;
+      }
+      .img1{
+        margin-bottom: -8px;
+        margin-top: -8px;
+        margin-right: -8px;      
+      }
+     
+.pic1 {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.pic1 ,
+.pic2 ,
+.pic3
+    {
+        cursor: pointer;
+        transition: all 1.3s ease;
+    }
+    .pic1:hover ,
+.pic2:hover ,
+.pic3:hover
+    {
+        overflow: hidden; 
+        transform: scale(1.1);    
+    }
+
+    #our{
+        color: white;
+    }
+  </style>
+</head>
+<body>
+
+           <!-- NAV BAR -->
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+         <!-- LOGO -->
+         <a class="navbar-brand" href="index.html"><img src="LOGO.jpg" alt="LOGO" width="180px"
+          style="padding-bottom: 12px;"></a>
+          <!-- MENU -->
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+          </button>
+          <!-- ELEMENTS-->
+          <div class="main">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Gallery.html">Gallary</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Tech.html">Technology</a>
+                      </li>
+                     
+                      <li class="nav-item">
+                          <a class="nav-link" href="aboutUs.html">AboutUs</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">ContactUs</a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Products
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                              style="background-color:rgba(255, 166, 0, 0.589); width: 50%;">
+                            <li><a class="dropdown-item" href="Luxury.html">Luxury Watches</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="Vintage.html" >Vintage Watches</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="SmartWatches.html">Smart Watches</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="Couple.html">Couple Watches</a></li>
+                          </ul>
+                        </li>
+
+                  </ul>
+              </div>
+              <!-- ELEMENTS END-->
+
+              <!-- LOGIN OR SIGN UP BUTTON  -->
+              <div class="other-links">
+                  <button id="btn-login"><a href="login.html">Login</a></button>
+                  <button id="btn-signup"><a href="reg.html">Registration</a></button>
+
+              </div>
+          </div>
+  </nav>
+  <!-- navbar END -->
+
+    <div class="heading">
+        <h1>About Us</h1>
+        <p id="HOME-LINK">Building a website often involves navigating the intricate <a href="index.html"><strong>ALBERT clock</strong></a> It can be tempting to be captivated by the allure of the design phase and lose sight of the crucial task of creating engaging content. The creation of outstanding content plays a pivotal role in establishing a noteworthy online presence for your business.</p>
+    </div>
+
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="OIG.jpg" alt="IMAGE">
+            </div>
+            <div class="about-content">
+                <h2>CEO (SIR ZOHAIB)</h2>
+                <p id="paragraph">A true companion is a unique bond earned throughout our lifetime. Discovering a friend who embodies qualities such as love, care, support, honesty, and loyalty is a remarkable accomplishment. Sir ZOHAIB personifies these virtues, and being in his company consistently provides opportunities to glean new and thrilling insights. Undoubtedly, having him as a friend is an invaluable source of continuous learning and enrichment. </p>
+
+                <a href="sirzohaib.html" class="read-more">Read More</a>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-content">
+                <h2>Leader (Muddassir Khan)</h2>
+                <p id="paragraph">Effective communication stands as a key leadership trait for various reasons. A skilled leader recognizes the necessity for creativity in tackling problems, taking risks, and making bold decisions. The term "brave" exemplifies confronting challenges and difficulties with courage. In our leader, Muddassir Khan, these qualities are not just evident but are seamlessly woven into his leadership style.</p>
+                <a href="khan.html" class="read-more">Read More</a>
+            </div>
+            <div class="about-image">
+                <img src="WhatsApp Image 2024-01-22 at 22.23.49_9488de9f.jpg" alt="IMAGE">
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="as.jpg" alt="IMAGE">
+            </div>
+            <div class="about-content">
+                <h2>Graphics Designer (Muhammad Sadil)</h2>
+                <p id="paragraph">Reliable, trustworthy, and consistently displaying honesty and integrity in one's work. The levels of excellence within your organization are unmatched in the office. Adept at meeting deadlines and skilled in prioritization, these individuals make excellent colleagues. They are independent and self-reliant, demonstrating the ability to work autonomously. Moreover, they take initiative and perform well even without close supervision.</p>
+                <a href="sadil.html" class="read-more">Read More</a>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-content">
+                <h2>Muddassir Jawad</h2>
+                <p id="paragraph">Being a team player involves successfully accomplishing tasks and reaching targets. As a team-oriented individual, you recognize that your actions in the workplace impact the entire team. Demonstrating a positive attitude, especially during challenging times, showcases strong team collaboration..</p>
+                <a href="muddassir.html" class="read-more">Read More</a>
+            </div>
+            <div class="about-image">
+                <img src="OIG.f1u7o.jpg" alt="IMAGE">
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="OIG (1).jpg" alt="IMAGE">
+            </div>
+            <div class="about-content">
+                <h2>Atta Ullah Khan </h2>
+                <p id="paragraph">Believe in your team. The truth of what makes a good team player lies in their ability to trust the efforts of their team.They share what they learn and embrace a mentoring role.</p>
+                <a href="aboutata.html" class="read-more">Read More</a>
+            </div>
+        </section>
+    </div>
+    
+<!-- ----------------------------------------------footer----------------------------------------------- -->
+     <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+    
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3 style="padding-top: 12px; font-weight: bold; font-size: 22px;">Follow Us On</h3>
+                        <br>
+                        <div class="socail-links mt-3">
+                            <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                            <a href="#"  target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="col-sm-6 col-lg-12 " id="clock">
+                            <span id="hours">12</span>
+                            <span>:</span>
+                            <span id="minutes">12</span>
+                            <span>:</span>
+                            <span id="seconds">12</span>
+                            <span id="session">AM</span>
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h3 style="font-weight: bold; font-size: 22px;">Our Services</h3>
+                        <ul>
+                            <li><a href="ourservices.html" target="_blank">Our Service</a></li>
+                            <li><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+                            <li><a href="location.html" target="_blank">Location</a></li>
+    
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h3 style="font-weight: bold; font-size: 22px;">Contact Us</h3>
+    
+                        <ul>
+                            <li><a href="aboutUs.html" target="_blank">About Us</a></li>
+                            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                            <li><a href="#" target="_blank">Site Map</a></li>
+    
+                        </ul>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h3 style="font-weight: bold; font-size: 22px;">Useful Links</h3>
+    
+                        <ul>
+                            <li><a href="paymentpage.html" target="_blank">Payment Option </a></li>
+                            <li><a href="Gallery.html" target="_blank">Main Gallay</a></li>
+                            <li><a href="#" target="_blank">Feedback Form</a></li>
+    
+                        </ul>
+                    </div>
+    
+    
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+    
+    <!-- arrow-->
+    <a href="#" class="arrow"><i><img src="arrow.png" alt=""></i></a>
+    
+    <!-- arrow jawa -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    
+    <!-- time  java -->
+    <script>
+        function displaytTime() {
+            var dateTime = new Date();
+            var hrs = dateTime.getHours();
+            var min = dateTime.getMinutes();
+            var sec = dateTime.getSeconds();
+            var session = document.getElementById("session");
+    
+            if (hrs >= 12) {
+                session.innerHTML = "PM";
+            } else {
+                session.innerHTML = "AM";
+            }
+    
+            if (hrs > 12) {
+                hrs = hrs - 12;
+            } else {
+                session.innerHTML = "AM";
+            }
+    
+            document.getElementById("hours").innerHTML = hrs;
+            document.getElementById("minutes").innerHTML = min;
+            document.getElementById("seconds").innerHTML = sec;
+        }
+        setInterval(displaytTime, 10);
+    </script>
+    <!-- time java end -->
+
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBERT CLOCK</title>
+    <link rel="shortcut icon" type="image" href="LOGO.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lexend+Deca:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,600;1,700;1,800&family=Varela+Round&display=swap');
+      
+      body 
+      {
+          font-family: 'Anton', sans-serif;
+          font-family: 'Playfair Display', serif;
+          font-family: 'Poppins', sans-serif;
+          font-family: 'Varela Round', sans-serif;
+          font-family: 'Lexend Deca', sans-serif;
+      }
+      
+      .card-img-top:hover{
+        transition: all 0.3s;
+        transform: scale(1.15);
+      }
+      
+       button:hover
+       {
+        border: #26272b;
+        border-radius: 8px;
+        border: solid;
+        box-shadow: none;
+       }
+       .dropdown-item:hover {
+            color: #fec400;
+            position: relative;
+            left: 5px;
+          }
+
+       
+      </style>
+</head>
+<body>
+
+       <!-- NAV BAR -->
+
+       <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+                    <!-- LOGO -->
+         <a class="navbar-brand" href="index.html"><img src="LOGO.jpg" alt="LOGO" width="180px"
+            style="padding-bottom: 12px;"></a>
+            <!-- MENU -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+            </button>
+            <!-- ELEMENTS-->
+            <div class="main">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Gallery.html">Gallary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Tech.html">Technology</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutUs.html">AboutUs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">ContactUs</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color:rgba(255, 166, 0, 0.589); width: 50%;">
+                              <li><a class="dropdown-item" href="Luxury.html">Luxury Watches</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="Vintage.html" >Vintage Watches</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="SmartWatches.html">Smart Watches</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="Couple.html">Couple Watches</a></li>
+                            </ul>
+                          </li>
+
+                    </ul>
+                </div>
+                <!-- ELEMENTS END-->
+
+                <!-- LOGIN OR SIGN UP BUTTON  -->
+              <div class="other-links">
+                <button id="btn-login"><a href="login.html">Login</a></button>
+                <button id="btn-signup"><a href="reg.html">Registration</a></button>
+
+            </div>
+        </div>
+</nav>
+    <!-- navbar END -->
+
+    <BR><BR><BR><BR><BR>
+
+        <!-- HEADING -->
+        
+        <h1 style="text-align: center; color: #fec400;">VINTAGE WATCHES</h1> 
+         
+        <!-- PARAGRAPH  -->
+        
+        <center><h4 style="color: white;">"It tells history not just a time."</h4></center>
+        
+        <!-- cards -->
+        
+        <div class="container ">
+        <div class="row gy-3 my-3">
+         <!-- First Card -->
+         <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="card" >
+              <img src="Vintage/r9.png" height="300px" width="300px" class="card-img-top" alt="..." data-aos="zoom-in">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Bulova Sutton Gold</h5>
+                <p class="card-text" style="text-align: center;">Time Is Storm.!</p>
+         <center><button  type="button"  class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#exampleModal" 
+         data-name="Bulova Sutton Gold" data-price="RS 26,000 " data-desc="Time Is Storm.!" 
+         data-img="Vintage/r9.png" onclick="clock(this)">Quick View</button></center>
+        </div>
+        </div>
+        </div>
+            <!-- Second Card -->
+        <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="card" >
+        <img src="Vintage/u7.jpg" height="300px" width="300px" class="card-img-top" alt="..." data-aos="zoom-in">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;"> CITIZEN Corso AW123</h5>
+          <p class="card-text" style="text-align: center;">Deal with it!</p>
+        <center><button  type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"
+         data-name="CITIZEN Corso AW123" data-price="RS 19,000 " data-desc="Deal with it!" 
+         data-img="Vintage/u7.jpg" onclick="clock(this)">Quick View</button></center>
+        </div>
+        </div>
+        </div>
+          <!-- Third Card -->
+        <div class="col-sm-6 col-md-4 col-lg-4 ">
+        <div class="card" >
+        <img src="Vintage/u10.jpeg" height="300px" width="300px" class="card-img-top" alt="..." data-aos="zoom-in">
+        <div class="card-body">
+          <h5 class="card-title"  style="text-align: center;"> Bulova Classic Automatic</h5>
+          <p class="card-text"  style="text-align: center;">Lost Time will never found Again.!</p>
+        <center><button  type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"
+         data-name=" Bulova Classic Automatic" data-price="RS 30,000 " data-desc="Lost Time will never found Again" 
+         data-img="Vintage/u10.jpeg" onclick="clock(this)">Quick View</button></center>
+        </div>
+        </div>
+        </div>
+        
+          <!-- fourth Card -->
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="card" >
+                <img src="Vintage/u11.jpg" height="300px" width="300px" class="card-img-top" alt="..."  data-aos="zoom-in">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;">Bulova Marine Star 0S20</h5>
+                  <p class="card-text" style="text-align: center;">Marine Star Men's Black</p>
+                <center> <button  type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#exampleModal"
+                 data-name="Bulova Marine Star 0S20" data-price="RS 32,000 " data-desc="Marine Star Men's Black "
+                 data-img="Vintage/u11.jpg" onclick="clock(this)">Quick View</button></center>
+                </div>
+              </div>
+        </div>
+        
+        
+                  <!-- fivth Card -->
+        <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="card" >
+        <img src="Vintage/b4.jpg" height="300px" width="350px" class="card-img-top" alt="..." data-aos="zoom-in">
+        <div class="card-body">
+        <h5 class="card-title" style="text-align: center;">Bulova Marine Star 98A22</h5>
+        <p class="card-text"  style="text-align: center;">Wear it like no one can.!</p>
+        <center> <button  type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-name="Bulova Marine Star 98A22" data-price="RS 28,000 " data-desc="Wear it like no one can" 
+        data-img="Vintage/b4.jpg" onclick="clock(this)">Quick View</button></center>
+        </div>
+        </div>
+        </div>
+        
+        <!-- sixth Card -->
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="card" >
+              <img src="Vintage/c34.jpeg" height="300px" width="350px" class="card-img-top" alt="..." data-aos="zoom-in">
+              <div class="card-body">
+                <h5 class="card-title"  style="text-align: center;">CITIZEN Men NJ0147-18X</h5>
+                <p class="card-text"  style="text-align: center;">Watch is my style.!</p>
+              <center><button  type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"
+               data-name="CITIZEN Men NJ0147-18X" data-price="RS 16,000 " data-desc="Watch is my style.!" 
+               data-img="Vintage/c34.jpeg" onclick="clock(this)">Quick View</button></center>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title text-warning" id="exampleModalLabel">VINTAGE WATCHES</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        
+        <div class="table-responsive">
+        <table class="table align-middle">
+        <thead>
+        <tr>
+           <th>Name</th>
+           <th>Price</th>
+           <th>Description</th>
+           <th>Image</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+         <td id="1"></td>
+         <td id="2"></td>
+         <td id="3"></td>
+         <td><img id="4" width="120px" height="120px"></td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- MODAL END -->
+        <script>
+        
+        function clock(item)
+        {
+        var name = item.getAttribute('data-name');
+        document.getElementById('1').innerHTML = name;
+        
+        var price = item.getAttribute('data-price');
+        document.getElementById('2').innerHTML = price;
+        
+        var desc = item.getAttribute('data-desc');
+        document.getElementById('3').innerHTML = desc;
+        
+        var img = item.getAttribute('data-img');
+        document.getElementById('4').src = img;
+        }
+        </script>
+        <!-- CDN AOS -->  
+        
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
+         <script>
+          AOS.init(
+          {
+            duration: 2000, once:true
+          }
+            
+          );
+        </script>
+        <BR><BR>
+
+             <!------------------------------------------footer----------------------------------------------------->
+   <!------------------------------------------footer----------------------------------------------------->
+   <footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3 style="padding-top: 12px; font-weight: bold; font-size: 22px;">Follow Us On</h3>
+                    <br>
+                    <div class="socail-links mt-3">
+                        <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                        <a href="#"  target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-skype"></i></a> -->
+                        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-12 " id="clock">
+                        <span id="hours">12</span>
+                        <span>:</span>
+                        <span id="minutes">12</span>
+                        <span>:</span>
+                        <span id="seconds">12</span>
+                        <span id="session">AM</span>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h3 style="font-weight: bold; font-size: 22px;">Our Services</h3>
+                    <ul>
+                        <li><a href="ourservices.html" target="_blank">Our Service</a></li>
+                        <li><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+                        <li><a href="location.html" target="_blank">Location</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h3 style="font-weight: bold; font-size: 22px;">Contact Us</h3>
+
+                    <ul>
+                        <li><a href="aboutUs.html" target="_blank">About Us</a></li>
+                        <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                        <li><a href="#" target="_blank">Site Map</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h3 style="font-weight: bold; font-size: 22px;">Useful Links</h3>
+
+                    <ul>
+                        <li><a href="paymentpage.html" target="_blank">Payment Option </a></li>
+                        <li><a href="Gallery.html" target="_blank">Main Gallay</a></li>
+                        <li><a href="#" target="_blank">Feedback Form</a></li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- arrow-->
+<a href="#" class="arrow"><i><img src="arrow.png" alt=""></i></a>
+
+<!-- arrow jawa -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<!-- time  java -->
+<script>
+    function displaytTime() {
+        var dateTime = new Date();
+        var hrs = dateTime.getHours();
+        var min = dateTime.getMinutes();
+        var sec = dateTime.getSeconds();
+        var session = document.getElementById("session");
+
+        if (hrs >= 12) {
+            session.innerHTML = "PM";
+        } else {
+            session.innerHTML = "AM";
+        }
+
+        if (hrs > 12) {
+            hrs = hrs - 12;
+        } else {
+            session.innerHTML = "AM";
+        }
+
+        document.getElementById("hours").innerHTML = hrs;
+        document.getElementById("minutes").innerHTML = min;
+        document.getElementById("seconds").innerHTML = sec;
+    }
+    setInterval(displaytTime, 10);
+</script>
+<!-- time java end -->
+
+</body>
+</html>
+
